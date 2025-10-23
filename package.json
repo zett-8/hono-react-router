@@ -50,7 +50,7 @@
     "@types/react-dom": "^19.0.1",
     "@typescript-eslint/eslint-plugin": "^8.20.0",
     "@typescript-eslint/parser": "^8.20.0",
-    "cloudflare": "^4.2.0",
+    "cloudflare": "^5.0.0",
     "dotenv-cli": "^8.0.0",
     "drizzle-kit": "~0.31.0",
     "eslint": "^9.18.0",
