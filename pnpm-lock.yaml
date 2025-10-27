@@ -31,7 +31,7 @@ importers:
         version: 0.44.7(@cloudflare/workers-types@4.20251014.0)(gel@2.1.1)
       drizzle-zod:
         specifier: ^0.8.0
-        version: 0.8.3(drizzle-orm@0.44.7(@cloudflare/workers-types@4.20251014.0)(gel@2.1.1))(zod@3.25.76)
+        version: 0.8.3(drizzle-orm@0.44.7(@cloudflare/workers-types@4.20251014.0)(gel@2.1.1))(zod@4.1.12)
       hono:
         specifier: ^4.7.4
         version: 4.10.2
@@ -54,8 +54,8 @@ importers:
         specifier: ^2.4.1
         version: 2.4.1
       zod:
-        specifier: ^3.24.1
-        version: 3.25.76
+        specifier: ^4.0.0
+        version: 4.1.12
     devDependencies:
       '@cloudflare/vitest-pool-workers':
         specifier: ^0.10.0
@@ -3925,6 +3925,9 @@ packages:
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
+  zod@4.1.12:
+    resolution: {integrity: sha512-JInaHOamG8pt5+Ey8kGmdcAcg3OL9reK8ltczgHTAwNhMys/6ThXHityHxVV2p3fkw/c+MAvBHFVYHFZDmjMCQ==}
+
 snapshots:
 
   '@babel/code-frame@7.27.1':
@@ -5601,10 +5604,10 @@ snapshots:
       '@cloudflare/workers-types': 4.20251014.0
       gel: 2.1.1
 
-  drizzle-zod@0.8.3(drizzle-orm@0.44.7(@cloudflare/workers-types@4.20251014.0)(gel@2.1.1))(zod@3.25.76):
+  drizzle-zod@0.8.3(drizzle-orm@0.44.7(@cloudflare/workers-types@4.20251014.0)(gel@2.1.1))(zod@4.1.12):
     dependencies:
       drizzle-orm: 0.44.7(@cloudflare/workers-types@4.20251014.0)(gel@2.1.1)
-      zod: 3.25.76
+      zod: 4.1.12
 
   dunder-proto@1.0.1:
     dependencies:
@@ -5931,8 +5934,8 @@ snapshots:
       '@babel/parser': 7.28.4
       eslint: 9.38.0(jiti@2.6.1)
       hermes-parser: 0.25.1
-      zod: 3.25.76
-      zod-validation-error: 4.0.2(zod@3.25.76)
+      zod: 4.1.12
+      zod-validation-error: 4.0.2(zod@4.1.12)
     transitivePeerDependencies:
       - supports-color
 
@@ -7717,10 +7720,12 @@ snapshots:
       cookie: 1.0.2
       youch-core: 0.3.3
 
-  zod-validation-error@4.0.2(zod@3.25.76):
+  zod-validation-error@4.0.2(zod@4.1.12):
     dependencies:
-      zod: 3.25.76
+      zod: 4.1.12
 
   zod@3.22.3: {}
 
   zod@3.25.76: {}
+
+  zod@4.1.12: {}
