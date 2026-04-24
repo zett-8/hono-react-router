@@ -19,7 +19,7 @@
     "deploy": "wrangler deploy"
   },
   "dependencies": {
-    "@clerk/backend": "^2.0.0",
+    "@clerk/backend": "^3.0.0",
     "@clerk/react-router": "^2.0.0",
     "@coji/remix-auth-google": "^4.1.0",
     "@hono/clerk-auth": "^3.0.0",
