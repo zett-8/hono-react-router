@@ -6,5 +6,6 @@ migrations
 .vscode
 .wrangler
 .idea
+.claude
 node_modules
 drizzle
