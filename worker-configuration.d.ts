@@ -2,7 +2,6 @@
 interface Env {
   DB: D1Database
   DEV: boolean
-  VITE_CLERK_PUBLISHABLE_KEY: string
-  CLERK_PUBLISHABLE_KEY: string
-  CLERK_SECRET_KEY: string
+  BETTER_AUTH_SECRET: string
+  BETTER_AUTH_URL: string
 }

@@ -1,13 +1,12 @@
-import type { D1Database } from '@cloudflare/workers-types/experimental'
+import type { Auth } from '../server/lib/auth'
 import type { Services } from '../server/services'
 
 declare global {
   type HonoENV = {
-    Bindings: {
-      DB: D1Database
-    }
+    Bindings: Env
     Variables: {
       services: Services
+      auth: Auth
     }
   }
 }

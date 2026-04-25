@@ -1,6 +1,5 @@
-export const setTestEnv = (env) => ({
+export const setTestEnv = (env: Record<string, unknown>) => ({
   ...env,
-  VITE_CLERK_PUBLISHABLE_KEY: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-  CLERK_PUBLISHABLE_KEY: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-  CLERK_SECRET_KEY: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+  BETTER_AUTH_SECRET: 'test-secret-key-for-testing-purposes',
+  BETTER_AUTH_URL: 'http://localhost:5173',
 })
