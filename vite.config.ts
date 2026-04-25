@@ -3,10 +3,12 @@ import { reactRouter } from '@react-router/dev/vite'
 import tailwindcss from '@tailwindcss/vite'
 import serverAdapter from 'hono-react-router-adapter/vite'
 import { defineConfig, type PluginOption } from 'vite'
-import tsconfigPaths from 'vite-tsconfig-paths'
 import { getLoadContext } from './load-context'
 
 export default defineConfig((_) => ({
+  resolve: {
+    tsconfigPaths: true,
+  },
   ssr: {
     target: 'webworker',
     resolve: {
@@ -29,6 +31,5 @@ export default defineConfig((_) => ({
     tailwindcss(),
     reactRouter(),
     serverAdapter({ adapter, getLoadContext, entry: './server/index.ts' }),
-    tsconfigPaths(),
   ] as PluginOption[],
 }))
