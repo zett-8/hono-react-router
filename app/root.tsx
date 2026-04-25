@@ -46,13 +46,16 @@ export default function App() {
             <span className="text-sm">{session.user.email}</span>
             <button
               onClick={() => signOut()}
-              className="cursor-pointer rounded bg-gray-200 px-3 py-1 text-sm hover:bg-gray-300"
+              className="cursor-pointer rounded border border-gray-300 bg-white px-3 py-1 text-sm text-gray-800 hover:bg-gray-100"
             >
               Sign Out
             </button>
           </div>
         ) : (
-          <Link to="/sign-in" className="cursor-pointer rounded bg-gray-200 px-3 py-1 text-sm hover:bg-gray-300">
+          <Link
+            to="/sign-in"
+            className="cursor-pointer rounded border border-gray-300 bg-white px-3 py-1 text-sm text-gray-800 hover:bg-gray-100"
+          >
             Sign In
           </Link>
         )}
