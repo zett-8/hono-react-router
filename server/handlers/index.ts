@@ -3,14 +3,14 @@ import { todosDelete, todosGet, todosPost } from './todo.handler'
 
 const apiHandler = new Hono<HonoENV>()
 
-const _h = apiHandler
+const _routes = apiHandler
   .get('/todos', ...todosGet)
   .post('/todos', ...todosPost)
   .delete('/todos/:id', ...todosDelete)
   .get('/check', (c) => {
     return c.json({ status: 'ok' }, 200)
   })
-export type RPC = typeof _h
+export type RPC = typeof _routes
 
 export const setHandlers = (app: Hono<HonoENV>) => {
   // Better Auth API routes

@@ -1,19 +1,22 @@
 import type { todos } from '../../database/schema'
-import type { TodoDomain } from '../domains/todo.domain'
+import type { Todo } from '../../database/schema/todo'
 import type { TodoRepository } from '../infrastructure/todo.repository'
 
 export class TodoService {
   constructor(private readonly todoRepository: TodoRepository) {}
 
-  async create(todo: typeof todos.$inferInsert): Promise<TodoDomain> {
+  async create(todo: typeof todos.$inferInsert): Promise<Todo> {
+    // Add business logic here (validation, transformation, etc.)
     return this.todoRepository.create(todo)
   }
 
-  async findAll(): Promise<TodoDomain[]> {
+  async findAll(): Promise<Todo[]> {
+    // Add business logic here (validation, transformation, etc.)
     return this.todoRepository.findAll()
   }
 
-  async delete(id: string): Promise<TodoDomain> {
+  async delete(id: string): Promise<Todo> {
+    // Add business logic here (validation, transformation, etc.)
     return this.todoRepository.delete(id)
   }
 }
