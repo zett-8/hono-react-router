@@ -19,7 +19,7 @@
     "deploy": "wrangler deploy"
   },
   "dependencies": {
-    "@clerk/backend": "^2.0.0",
+    "@clerk/backend": "^3.0.0",
     "@clerk/react-router": "^2.0.0",
     "@coji/remix-auth-google": "^4.1.0",
     "@hono/clerk-auth": "^3.0.0",
@@ -37,7 +37,7 @@
     "zod": "^4.0.0"
   },
   "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.10.0",
+    "@cloudflare/vitest-pool-workers": "^0.15.0",
     "@cloudflare/workers-types": "^4.20241112.0",
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^10.0.0",

@@ -1,8 +1,14 @@
-import { defineWorkersProject } from '@cloudflare/vitest-pool-workers/config'
+import { cloudflareTest } from '@cloudflare/vitest-pool-workers'
 import tsconfigPaths from 'vite-tsconfig-paths'
+import { defineConfig } from 'vitest/config'
 
-export default defineWorkersProject(() => ({
-  plugins: [tsconfigPaths()],
+export default defineConfig({
+  plugins: [
+    tsconfigPaths(),
+    cloudflareTest({
+      wrangler: { configPath: './wrangler.toml' },
+    }),
+  ],
   test: {
     globals: true,
     server: {
@@ -10,8 +16,5 @@ export default defineWorkersProject(() => ({
         inline: ['@hono/clerk-auth', '@clerk/react-router', '@clerk/backend', 'snakecase-keys'],
       },
     },
-    poolOptions: {
-      workers: { wrangler: { configPath: './wrangler.toml' } },
-    },
   },
-}))
+})
