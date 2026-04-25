@@ -16,7 +16,7 @@ export const createAuth = (db: DrizzleD1Database<typeof schema>, env: Env) => {
         verification: schema.verification,
       },
     }),
-    trustedOrigins: env.DEV ? ['http://localhost:5173'] : [],
+    trustedOrigins: [env.BETTER_AUTH_URL],
     emailAndPassword: {
       enabled: true,
     },
