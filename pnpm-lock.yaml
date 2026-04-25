@@ -19,7 +19,7 @@ importers:
         version: 4.2.0
       '@hono/clerk-auth':
         specifier: ^3.0.0
-        version: 3.1.1(hono@4.12.14)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
+        version: 3.1.1(hono@4.12.15)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@react-router/node':
         specifier: ^7.1.3
         version: 7.14.2(react-router@7.14.2(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(typescript@5.9.3)
@@ -34,10 +34,10 @@ importers:
         version: 0.8.3(drizzle-orm@0.45.2(@cloudflare/workers-types@4.20260421.1))(zod@4.3.6)
       hono:
         specifier: ^4.7.4
-        version: 4.12.14
+        version: 4.12.15
       hono-react-router-adapter:
         specifier: ^0.6.2
-        version: 0.6.5(hono@4.12.14)(miniflare@4.20260420.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.9.3)(wrangler@4.84.0(@cloudflare/workers-types@4.20260421.1))
+        version: 0.6.5(hono@4.12.15)(miniflare@4.20260420.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.9.3)(wrangler@4.84.0(@cloudflare/workers-types@4.20260421.1))
       isbot:
         specifier: ^5.1.17
         version: 5.1.39
@@ -71,7 +71,7 @@ importers:
         version: 9.39.4
       '@hono/vite-dev-server':
         specifier: ^0.25.0
-        version: 0.25.3(hono@4.12.14)(miniflare@4.20260420.0)(wrangler@4.84.0(@cloudflare/workers-types@4.20260421.1))
+        version: 0.25.3(hono@4.12.15)(miniflare@4.20260420.0)(wrangler@4.84.0(@cloudflare/workers-types@4.20260421.1))
       '@react-router/dev':
         specifier: ^7.1.3
         version: 7.14.2(@react-router/serve@7.14.2(react-router@7.14.2(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(typescript@5.9.3))(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(react-router@7.14.2(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(tsx@4.21.0)(typescript@5.9.3)(vite@7.3.2(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0))(wrangler@4.84.0(@cloudflare/workers-types@4.20260421.1))
@@ -3070,8 +3070,8 @@ packages:
     peerDependencies:
       hono: '*'
 
-  hono@4.12.14:
-    resolution: {integrity: sha512-am5zfg3yu6sqn5yjKBNqhnTX7Cv+m00ox+7jbaKkrLMRJ4rAdldd1xPd/JzbBWspqaQv6RSTrgFN95EsfhC+7w==}
+  hono@4.12.15:
+    resolution: {integrity: sha512-qM0jDhFEaCBb4TxoW7f53Qrpv9RBiayUHo0S52JudprkhvpjIrGoU1mnnr29Fvd1U335ZFPZQY1wlkqgfGXyLg==}
     engines: {node: '>=16.9.0'}
 
   http-errors@2.0.1:
@@ -5104,37 +5104,37 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
-  '@hono/clerk-auth@3.1.1(hono@4.12.14)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
+  '@hono/clerk-auth@3.1.1(hono@4.12.15)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
     dependencies:
       '@clerk/backend': 2.33.3(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@clerk/shared': 3.47.4(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
-      hono: 4.12.14
+      hono: 4.12.15
     transitivePeerDependencies:
       - react
       - react-dom
 
-  '@hono/node-server@1.19.14(hono@4.12.14)':
+  '@hono/node-server@1.19.14(hono@4.12.15)':
     dependencies:
-      hono: 4.12.14
+      hono: 4.12.15
 
-  '@hono/node-server@2.0.0(hono@4.12.14)':
+  '@hono/node-server@2.0.0(hono@4.12.15)':
     dependencies:
-      hono: 4.12.14
+      hono: 4.12.15
     optional: true
 
-  '@hono/vite-dev-server@0.18.3(hono@4.12.14)(miniflare@4.20260420.0)(wrangler@4.84.0(@cloudflare/workers-types@4.20260421.1))':
+  '@hono/vite-dev-server@0.18.3(hono@4.12.15)(miniflare@4.20260420.0)(wrangler@4.84.0(@cloudflare/workers-types@4.20260421.1))':
     dependencies:
-      '@hono/node-server': 1.19.14(hono@4.12.14)
-      hono: 4.12.14
+      '@hono/node-server': 1.19.14(hono@4.12.15)
+      hono: 4.12.15
       minimatch: 9.0.9
     optionalDependencies:
       miniflare: 4.20260420.0
       wrangler: 4.84.0(@cloudflare/workers-types@4.20260421.1)
 
-  '@hono/vite-dev-server@0.25.3(hono@4.12.14)(miniflare@4.20260420.0)(wrangler@4.84.0(@cloudflare/workers-types@4.20260421.1))':
+  '@hono/vite-dev-server@0.25.3(hono@4.12.15)(miniflare@4.20260420.0)(wrangler@4.84.0(@cloudflare/workers-types@4.20260421.1))':
     dependencies:
-      '@hono/node-server': 1.19.14(hono@4.12.14)
-      hono: 4.12.14
+      '@hono/node-server': 1.19.14(hono@4.12.15)
+      hono: 4.12.15
       minimatch: 9.0.9
     optionalDependencies:
       miniflare: 4.20260420.0
@@ -6928,13 +6928,13 @@ snapshots:
     dependencies:
       hermes-estree: 0.25.1
 
-  hono-react-router-adapter@0.6.5(hono@4.12.14)(miniflare@4.20260420.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.9.3)(wrangler@4.84.0(@cloudflare/workers-types@4.20260421.1)):
+  hono-react-router-adapter@0.6.5(hono@4.12.15)(miniflare@4.20260420.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.9.3)(wrangler@4.84.0(@cloudflare/workers-types@4.20260421.1)):
     dependencies:
-      '@hono/vite-dev-server': 0.18.3(hono@4.12.14)(miniflare@4.20260420.0)(wrangler@4.84.0(@cloudflare/workers-types@4.20260421.1))
-      hono: 4.12.14
+      '@hono/vite-dev-server': 0.18.3(hono@4.12.15)(miniflare@4.20260420.0)(wrangler@4.84.0(@cloudflare/workers-types@4.20260421.1))
+      hono: 4.12.15
       react-router: 7.14.2(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
     optionalDependencies:
-      '@hono/node-server': 2.0.0(hono@4.12.14)
+      '@hono/node-server': 2.0.0(hono@4.12.15)
       '@react-router/node': 7.14.2(react-router@7.14.2(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(typescript@5.9.3)
     transitivePeerDependencies:
       - miniflare
@@ -6943,7 +6943,7 @@ snapshots:
       - typescript
       - wrangler
 
-  hono@4.12.14: {}
+  hono@4.12.15: {}
 
   http-errors@2.0.1:
     dependencies:
