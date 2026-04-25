@@ -1,2 +1,2 @@
 export { todos } from './todo'
-export { users } from './user'
+export { user, session, account, verification } from './auth'

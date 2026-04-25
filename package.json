@@ -19,12 +19,9 @@
     "deploy": "wrangler deploy"
   },
   "dependencies": {
-    "@clerk/backend": "^3.0.0",
-    "@clerk/react-router": "^2.0.0",
-    "@coji/remix-auth-google": "^4.1.0",
-    "@hono/clerk-auth": "^3.0.0",
     "@react-router/node": "^7.1.3",
     "@react-router/serve": "^7.1.3",
+    "better-auth": "^1.6.9",
     "drizzle-orm": "~0.45.0",
     "drizzle-zod": "^0.8.0",
     "hono": "^4.7.4",
