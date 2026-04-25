@@ -1,4 +1,4 @@
-import { ClerkProvider, SignedIn, SignedOut, UserButton, SignInButton } from '@clerk/react-router'
+import { ClerkProvider, Show, UserButton, SignInButton } from '@clerk/react-router'
 import { rootAuthLoader } from '@clerk/react-router/ssr.server'
 import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router'
 import type { Route } from './+types/root'
@@ -44,14 +44,14 @@ export default function App({ loaderData }: Route.ComponentProps) {
   return (
     <ClerkProvider loaderData={loaderData} signUpFallbackRedirectUrl="/" signInFallbackRedirectUrl="/">
       <header className="fixed right-8 flex items-center justify-center px-4 py-8">
-        <SignedOut>
+        <Show when="signed-out">
           <div className="[&>button]:cursor-pointer">
             <SignInButton />
           </div>
-        </SignedOut>
-        <SignedIn>
+        </Show>
+        <Show when="signed-in">
           <UserButton />
-        </SignedIn>
+        </Show>
       </header>
       <main>
         <Outlet />
