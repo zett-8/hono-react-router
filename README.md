@@ -17,21 +17,21 @@ It builds upon the official [React Router Cloudflare D1 template](https://github
 
 This repository also includes a lighter version under the [`mini`](https://github.com/zett-8/hono-react-router/tree/mini) branch — choose the version that best fits your needs.
 
-| Feature / Branch                             | `main` | `mini` |
-| -------------------------------------------- | ------ | ------ |
-| Hono Server                                  | ✅     | ✅     |
-| └─ Clean Architecture                        | ✅     |        |
-| React Router (Framework mode)                | ✅     | ✅     |
-| D1 Database                                  | ✅     |        |
-| Authentication ([Clerk](https://clerk.com/)) | ✅     |        |
-| Drizzle ORM                                  | ✅     |        |
-| Testing (Vitest)                             | ✅     |        |
-| Zod Validation                               | ✅     |        |
-| Tailwind CSS                                 | ✅     | ✅     |
-| Prettier                                     | ✅     | ✅     |
-| ESLint (Flat Config)                         | ✅     | ✅     |
-| Vite                                         | ✅     | ✅     |
-| TypeScript                                   | ✅     | ✅     |
+| Feature / Branch                                        | `main` | `mini` |
+| ------------------------------------------------------- | ------ | ------ |
+| Hono Server                                             | ✅     | ✅     |
+| └─ Clean Architecture                                   | ✅     |        |
+| React Router (Framework mode)                           | ✅     | ✅     |
+| D1 Database                                             | ✅     |        |
+| Authentication ([Better Auth](https://better-auth.com)) | ✅     |        |
+| Drizzle ORM                                             | ✅     |        |
+| Testing (Vitest)                                        | ✅     |        |
+| Zod Validation                                          | ✅     |        |
+| Tailwind CSS                                            | ✅     | ✅     |
+| Prettier                                                | ✅     | ✅     |
+| ESLint (Flat Config)                                    | ✅     | ✅     |
+| Vite                                                    | ✅     | ✅     |
+| TypeScript                                              | ✅     | ✅     |
 
 <br />
 
@@ -49,14 +49,22 @@ pnpm install
 pnpm typegen
 ```
 
-### 3. Run initial database migration
+### 3. Set up environment variables
+
+```bash
+cp .dev.vars.sample .dev.vars
+```
+
+Then edit `.dev.vars` and set your `BETTER_AUTH_SECRET` (at least 32 characters).
+
+### 4. Run initial database migration
 
 ```bash
 pnpm db:generate
 pnpm db:migrate
 ```
 
-### 4. Start the development server (with HMR)
+### 5. Start the development server (with HMR)
 
 ```bash
 pnpm dev

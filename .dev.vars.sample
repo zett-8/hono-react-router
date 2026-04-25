@@ -1,5 +1,3 @@
-DEV=
-CLERK_SECRET_KEY=
-# Although the following values are identical. VITE_CLERK_PUBLISHABLE_KEY for Frontend and CLERK_PUBLISHABLE_KEY for Backend.
-VITE_CLERK_PUBLISHABLE_KEY=
-CLERK_PUBLISHABLE_KEY=
+DEV=true
+BETTER_AUTH_SECRET=your-secret-key-at-least-32-characters
+BETTER_AUTH_URL=http://localhost:5173
