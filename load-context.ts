@@ -1,5 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/triple-slash-reference
-/// <reference path="./types/hono.d.ts" />
 import type { Context } from 'hono'
 import { type AppLoadContext } from 'react-router'
 import type { PlatformProxy } from 'wrangler'
