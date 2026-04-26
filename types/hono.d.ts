@@ -1,7 +1,7 @@
 declare global {
   type HonoENV = {
-    Bindings: { _ }
-    Variables: { _ }
+    Bindings: Env
+    Variables: object
   }
 }
 
