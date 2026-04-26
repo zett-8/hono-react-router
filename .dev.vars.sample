@@ -1,3 +1,1 @@
-DEV=true
-BETTER_AUTH_SECRET=your-secret-key-at-least-32-characters
-BETTER_AUTH_URL=http://localhost:5173
+DEV=

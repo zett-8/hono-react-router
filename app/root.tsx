@@ -1,7 +1,6 @@
-import { isRouteErrorResponse, Link, Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router'
+import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router'
 import type { Route } from './+types/root'
 import stylesheet from './global.css?url'
-import { useSession, signOut } from './lib/auth-client'
 
 export const links: Route.LinksFunction = () => [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -35,36 +34,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
   )
 }
 
-export default function App() {
-  const { data: session, isPending } = useSession()
-
-  return (
-    <>
-      <header className="fixed right-8 flex items-center justify-center px-4 py-8">
-        {isPending ? null : session ? (
-          <div className="flex items-center gap-4">
-            <span className="text-sm">{session.user.email}</span>
-            <button
-              onClick={() => signOut()}
-              className="cursor-pointer rounded border border-gray-300 bg-white px-3 py-1 text-sm text-gray-800 hover:bg-gray-100"
-            >
-              Sign Out
-            </button>
-          </div>
-        ) : (
-          <Link
-            to="/sign-in"
-            className="cursor-pointer rounded border border-gray-300 bg-white px-3 py-1 text-sm text-gray-800 hover:bg-gray-100"
-          >
-            Sign In
-          </Link>
-        )}
-      </header>
-      <main>
-        <Outlet />
-      </main>
-    </>
-  )
+export default function App(_: Route.ComponentProps) {
+  return <Outlet />
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {

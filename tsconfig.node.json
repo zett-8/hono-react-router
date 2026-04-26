@@ -1,13 +1,6 @@
 {
   "extends": "./tsconfig.json",
-  "include": [
-    "tailwind.config.ts",
-    "vite.config.ts",
-    "database/**/*",
-    "load-context.ts",
-    "worker-configuration.d.ts",
-    "types/**/*"
-  ],
+  "include": ["tailwind.config.ts", "vite.config.ts", "load-context.ts", "worker-configuration.d.ts", "types/**/*"],
   "compilerOptions": {
     "composite": true,
     "strict": true,

@@ -5,11 +5,5 @@ compatibility_flags = ["nodejs_compat"]
 main = "./worker.ts"
 assets = { directory = "./build/client/" }
 
-[[d1_databases]]
-binding = "DB"
-database_name = "<your-database-name>"
-database_id = "<your-database-id>"
-migrations_dir = "database/drizzle"
-
-[observability.logs]
-enabled = true
+[vars]
+TEST = "abc"
