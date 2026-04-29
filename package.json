@@ -58,7 +58,7 @@
     "eslint-plugin-react-hooks": "^7.0.0",
     "globals": "^17.0.0",
     "prettier": "^3.4.2",
-    "prettier-plugin-tailwindcss": "^0.7.0",
+    "prettier-plugin-tailwindcss": "^0.8.0",
     "tailwindcss": "^4.0.0",
     "typescript": "^6.0.0",
     "typescript-eslint": "^8.20.0",
