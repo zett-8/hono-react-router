@@ -12,10 +12,5 @@ export default defineConfig({
   ],
   test: {
     globals: true,
-    server: {
-      deps: {
-        inline: ['@hono/clerk-auth', '@clerk/react-router', '@clerk/backend', 'snakecase-keys'],
-      },
-    },
   },
 })
