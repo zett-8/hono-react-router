@@ -89,7 +89,7 @@ importers:
         version: 8.59.3(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.3)
       cloudflare:
         specifier: ^6.0.0
-        version: 6.1.0
+        version: 6.2.0
       dotenv-cli:
         specifier: ^11.0.0
         version: 11.0.0
@@ -2237,8 +2237,8 @@ packages:
   cjs-module-lexer@1.4.3:
     resolution: {integrity: sha512-9z8TZaGM1pfswYeXrUpzPrkx8UnWYdhJclsiYMm6x/w5+nN+8Tf/LnAgfLGQCm59qAOxU8WwHEq2vNwF6i4j+Q==}
 
-  cloudflare@6.1.0:
-    resolution: {integrity: sha512-4hVKiowaEjRoYOFRj8/2bSaj4sQl4GUO/XnzV5OEnjvaYz+MWQOqs3KX6nlbix98JF2iSS/MZrIjbz9C+hkEaQ==}
+  cloudflare@6.2.0:
+    resolution: {integrity: sha512-UyN+6M1zqHaN5bgGu8ThZL/pBc7J3uR3uFf907OJWOwpiyRGRDSeTVLwLoQH34NJ9PSh4VubW80KI2NS9zI3Sg==}
 
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
@@ -5778,7 +5778,7 @@ snapshots:
 
   cjs-module-lexer@1.4.3: {}
 
-  cloudflare@6.1.0:
+  cloudflare@6.2.0:
     dependencies:
       '@types/node': 18.19.130
       '@types/node-fetch': 2.6.13
