@@ -1,5 +1,4 @@
 // @ts-expect-error vitest pool workers provide a cloudflare:test module AT RUNTIME
-// eslint-disable-next-line
 import { env } from 'cloudflare:test'
 import { describe, it, expect, beforeAll } from 'vitest'
 import app from '../server'

@@ -1,0 +1,24 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "printWidth": 120,
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "sortTailwindcss": true,
+  "sortImports": {
+    "internalPattern": ["@app/", "~/"],
+    "groups": ["external", "internal", ["parent", "sibling", "index"]],
+    "newlinesBetween": false
+  },
+  "ignorePatterns": [
+    "pnpm-lock.yaml",
+    "public",
+    "migrations",
+    ".react-router",
+    ".vscode",
+    ".wrangler",
+    ".idea",
+    ".claude",
+    "drizzle"
+  ]
+}
