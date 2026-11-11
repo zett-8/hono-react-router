@@ -74,7 +74,7 @@ importers:
         version: 19.3.0(@types/react@19.3.0)
       cloudflare:
         specifier: ^7.0.0
-        version: 7.1.0
+        version: 7.3.0
       dotenv-cli:
         specifier: ^11.0.0
         version: 11.0.0
@@ -2492,8 +2492,8 @@ packages:
   cjs-module-lexer@1.2.3:
     resolution: {integrity: sha512-0TNiGstbQmCFwt4akjjBg5pLRTSyj/PkWQ1ZoO2zntmg9yLqSRxwEa4iCfQLGjqhiqBfOJa7W/E8wfGrTDmlZQ==}
 
-  cloudflare@7.1.0:
-    resolution: {integrity: sha512-eb6WtiAbhuqdWmBdVo6fuXQgEBkYjhOeujRDYLEUWEZIECuABvDLz2DUYTwpN/4KyFecM4JtMHgZn5prlFUjLg==}
+  cloudflare@7.3.0:
+    resolution: {integrity: sha512-0P4cMFjzdIe388E57xNCV2wKzv1ZVZqMFu7+p2gsZuggbXs39xTKtXJN8FACkKh+xjLQ7dNruNlT/aT+9ajJtg==}
     hasBin: true
 
   compressible@2.0.18:
@@ -5341,7 +5341,7 @@ snapshots:
 
   cjs-module-lexer@1.2.3: {}
 
-  cloudflare@7.1.0: {}
+  cloudflare@7.3.0: {}
 
   compressible@2.0.18:
     dependencies:
